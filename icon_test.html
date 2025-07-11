@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fontawesomecdn_test</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        ul { 
+            list-style: none; /* ul안에 글머리 표시 없애기 */
+        }
+        h1 { 
+            font-size: 70px;
+            color:rgba(173, 37, 37, 0.3)
+            /* 색상적용 진행중 a를 붙여 (알파값) 투명도 조절  */
+
+        }
+        a:link { /* a:link는 아직 방문하지 않은 링크 상태 */
+            text-decoration: none;  /*하이퍼 링크가 걸린곳의 밑줄 없애기*/
+            color: red
+        }
+        a:visited { /* 방문한 이후의 링크상태 */
+            color: black;
+        }
+        a:hover {
+            text-decoration: underline; /*하이퍼링크에 마우스가 닿았을때(호버이벤트)*/
+            font-weight: bold;
+            color: chartreuse;
+        }
+        a:active { /*하이퍼링크에 마우스를 누른상태의 모습*/
+            color: aqua;
+        }
+        
+    </style>
+    <!-- ul안에 글머리 표시 없애기 -->
+     <!-- fontawesomecdn / fontawesome 아이콘 적용 -->
+    </head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <i class="fa-solid fa-house-chimney-user"></i>
+                <a href="Font_Test.html">메뉴1</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-house-laptop"></i>
+                <a href="text_align.html">메뉴2</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </nav>
+    <h1> css 색상 적용 테스트 </h1>
+</body>
+</html>
