@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 박스 테두리 만들기</title>
+
+    <style>
+        div {  /*공통된 지정값*/
+            width: 200px;  /*박스 칸 사이즈*/
+            height: 100px;  /*박스 칸 사이즈*/
+            text-align: center;  /*박스 칸 내부 텍스트 위치*/
+            font-size: 15px; 
+            border-width: 3px;  /*박스 테투리 사이즈*/
+            margin: 20px;  /*박스 칸 외부 사이즈*/
+            padding: 50px;  /*박스 칸 내부 사이즈*/
+            line-height: 100px;  /*박스 칸 내부 텍스트 위 사이즈*/
+            border-color: blue;  /*박스 칸 색갈 (기본값 검정)*/
+            border-top-color: yellow;
+            border-right-color: yellowgreen;  
+            border-bottom-color: 
+            border-left-color  ;  /*박스 칸 색갈 위치별로 설정가능 */
+        }
+        .box1 { /*개별 지정값*/
+            border-style: solid;
+        }
+        .box2 { /*개별 지정값*/
+            border-style: dashed;
+        }
+        .box3 { /*개별 지정값*/
+            border-style: dotted;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px; /* 칸 개별 모서리 둥글게 */
+            border-bottom-right-radius: 20px;
+        }
+        .box4 { /*개별 지정값*/
+            border: 2px solid darkblue;
+            border-radius: 20px; /*칸 전체 모서리 둥글게*/
+            /* border-radius: 50%; 사각모양 박스 원모양 만들때 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+</body>
+</html>
